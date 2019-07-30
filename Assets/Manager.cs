@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//EXISTE UN OBJETO DE REFERENCIA PARA CREAR LOS TRES TIPOS DE PERSONAJES CON RIGID BODY Y BOX COLLIDER
 public class Manager : MonoBehaviour
 {
     public GameObject objectref, cam;
@@ -14,7 +13,7 @@ public class Manager : MonoBehaviour
 
     void Start()
     {
-        
+
         int azarLimit = //variables para determinar cantidad de zombos y ciudadanos
             Random.Range(4, 9), cantCiudadanos = Random.Range(1, azarLimit);
 
@@ -36,14 +35,14 @@ public class Manager : MonoBehaviour
     }
 
     float x, y;
-    void CamMove()
+    void CamMove()//movimiento de cámara
     {
         x += Input.GetAxis("Mouse X");
         y -= Input.GetAxis("Mouse Y");
         cam.transform.eulerAngles = new Vector3(y * 2, x * 2, 0);
-    }//movimiento de cámara
+    }
 
-    string[] nombres()
+    string[] nombres()//banco de nombres
     {
         string[] nombres = new string[20]{
             "Francisco Alberto Buenavides",
@@ -68,11 +67,5 @@ public class Manager : MonoBehaviour
             "Saori Hayami" }
             ;
         return nombres;
-    }//banco de nombres
+    }
 }
-
-
-
-
-
-

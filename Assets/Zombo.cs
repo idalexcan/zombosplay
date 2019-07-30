@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Zombo
 {
-    public static int edad;
     GameObject[] zombos;
+
     //CONSTRUCTOR DE ZOMBOS
     public Zombo(GameObject zombo, int cantZombos)
     {

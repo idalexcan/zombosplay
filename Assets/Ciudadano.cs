@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Ciudadano
 {
+    //atributos de un ciudadano
     string nombre;
     int edad;
 
@@ -18,7 +19,7 @@ public class Ciudadano
         Debug.Log(Print(nombre, edad));
     }
 
-    string Print(string n, int e)
+    string Print(string n, int e)// imprime mensaje de presentación de ciudadano
     {
         return "soy " + n + " y tengo " + e + " años :D";
     }
